@@ -1,0 +1,16 @@
+{
+ "short_name": "pokepwa", 
+ "name": "un consultador de pokemones",
+  "icons": [
+   {
+     "src": "apple-touch-icon.png",
+     "type": "image/png",
+     "sizes": "180x180"
+   }
+ ],
+ "display": "standalone",
+ "orientation": "portrait",
+ "theme_color": "darkslategray",
+ "background_color": "darkslategray",
+ "start_url": "./index.html"
+}

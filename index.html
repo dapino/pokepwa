@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Pokepwa</title>
+  <meta name="theme-color" content="#1f354a">
+  <link rel="stylesheet" href="/css/main.css">
+  <link rel="manifest" href="manifest.json">
+
+  <style>    
+    body {
+      background: darkslategray;
+      color: #fff;
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      padding-bottom: 10em;
+    }
+    
+    .poke-nav {
+      display: flex;
+      background: #172222;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px;
+      box-sizing: content-box;
+      margin-bottom: 10px;
+    }
+    
+    .poke-nav > div:nth-child(1) {
+      width: 90%;
+    }
+    
+    .poke-nav > div:nth-child(2) {
+      display: flex;
+      justify-content: space-between;
+    }
+    
+    .poke-nav > div:nth-child(2) div {
+      padding-left: 20px;
+    }
+  </style>
+</head>
+
+<body>
+  <nav class="poke-nav">
+    <div>
+      <h1>Pokeapi</h1>
+    </div>
+    <div>
+
+      <div>buscar</div>
+      <div>Creditos</div>
+    </div>
+  </nav>
+
+  <section class="poke-form">
+    <input type="text" id="filter-text" value="48">
+    <button type="button" id="search-btn">search</button>
+  </section>
+  <section class="poke-results">
+    <h2 class="poke-name"></h2>
+
+    <div class="poke-pic-container">
+      <img src="" alt="" class="poke-pic">
+    </div>
+
+    <div class="poke-abilities-container">
+
+    </div>
+
+
+
+    <!--<div class="poke-evolutions">
+      <div class="poke-evolution">
+        <div class="poke-evo-name"></div>
+        <div class="poke-evo-pic-container">
+          <img src="" alt="" class="poke-evo-pic">
+        </div>
+      </div>
+    </div>-->
+  </section>
+
+  <script src="/js/services.js"></script>
+  <script src="/js/app.js"></script>
+  <script src="sw-registration.js"></script>
+</body>
+
+</html>
