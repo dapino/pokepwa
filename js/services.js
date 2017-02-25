@@ -1,6 +1,6 @@
 class Service {
     constructor() {
-        this.urlApi = 'http://pokeapi.co/api/v2/';
+        this.urlApi = 'https://pokeapi.co/api/v2/';
     }
 
     getPokemon(identifier) {
