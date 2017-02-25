@@ -58,7 +58,7 @@ self.addEventListener('fetch', event => {
             var responseToCache = response.clone();
 
             caches.open(CACHE_ACTUAL)
-              .then( chache => {
+              .then( cache => {
                 cache.put(event.request, responseToCache);
               });
 
