@@ -14,7 +14,7 @@ class Service {
 
          
         return fetch(`${this.urlApi}pokemon/${identifier}`)
-            .then(getPokemonSuccess => {
+            .then(getPokemonSuccess => {git 
                 return getPokemonSuccess.json();
             }).catch( e => {
                 console.log(e);
